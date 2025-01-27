@@ -1,19 +1,44 @@
-# Yuka-Barcode-Gen
-This project is a Python script that generates a barcode image from a product's UPC number on the Target website.
+# Yuka Barcode Generator
 
-The script uses web scraping techniques to extract the UPC number from a given product page on the Target website. It then generates a barcode for that UPC number and displays it in a GUI window.
+**Yuka-Barcode-Gen** is a Python program that provides a workaround for an exclusive feature on the Yuka app by web scraping the UPC number of an item from the Target website and generating a barcode for easy scanning.
 
-Installation: 
+## Features
 
-Clone this repository to your local machine.
-Install the necessary Python packages by running pip install -r requirements.txt in your terminal.
+- Scrapes UPC numbers from Target product pages.
+- Generates barcodes for use in the Yuka app.
+- Simple and easy-to-use command-line interface.
 
-Usage:
+## Installation
 
-Run the script with python yukabarcode.py.
-Enter the URL of a product page on the Target website into the text field.
-Click the "Generate Barcode" button.
+1. Clone the repository:
 
-Contributing:
+   ```bash
+   git clone https://github.com/gitedmond/Yuka-Barcode-Gen.git
+   cd Yuka-Barcode-Gen
+   ```
 
-Feel free to fork this repository and make improvements or additions. Please make a pull request when you're ready to merge your changes.
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. Run the script with a Target product URL:
+
+   ```bash
+   python yukabarcode.py "https://www.target.com/p/product-url"
+   ```
+
+2. The generated barcode will be saved as an image file.
+
+## Requirements
+
+- Python 3.x
+- Required libraries listed in `requirements.txt`
+
+## Contributing
+
+Feel free to submit issues or feature requests via GitHub Issues. Contributions are welcome!
+
